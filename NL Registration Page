@@ -4,15 +4,16 @@ from tkinter import Tk, Toplevel
 from tkinter.ttk import Label, Button
 from tkinter import*
 root = Tk()
-root.geometry('500x500')
+root.geometry('600x600')
 #Create tab title
 root.title("Newsletter Registration Form")
 from tkcalendar import DateEntry
 
+#define second window properties
 def new_window():
     top = Toplevel()
     top.title("Thank You")
-    top.geometry("400x500")    # By default, it is kept as the geometry of the main window, but you can change it.
+    top.geometry("400x500")  
     lab = Label(top, text="Thank you for submitting the Newsletter Registration Form!")
     lab.pack(pady=20)
     
@@ -66,4 +67,3 @@ exit_button = Button(root, text="Exit", width=20, bg='red', fg='white', command=
 # it is use for display the registration form on the window
 root.mainloop()
 print("registration form  seccussfully created...")
-
